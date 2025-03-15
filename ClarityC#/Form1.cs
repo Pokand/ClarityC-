@@ -10,7 +10,7 @@ namespace ClarityC_
             ReceiptButn.Click += button1_Click;
             SettingButn.Click += button2_Click;
             MusikButn.Click += btn3_Click;
-            groupBox1.BackColor = Color.Transparent;
+  
         }
         private void button2_Click(object? sender, EventArgs e)
         {
@@ -24,10 +24,6 @@ namespace ClarityC_
         {
             groupBox1.Visible = !groupBox1.Visible;
         }
-
-       
-
-        
 
         
     }

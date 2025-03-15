@@ -86,7 +86,7 @@
             // 
             // groupBox1
             // 
-            groupBox1.BackColor = SystemColors.ButtonShadow;
+            groupBox1.BackColor = Color.Transparent;
             groupBox1.BackgroundImageLayout = ImageLayout.None;
             groupBox1.Controls.Add(ClockButn);
             groupBox1.Controls.Add(ReceiptButn);
@@ -98,7 +98,6 @@
             groupBox1.Size = new Size(160, 577);
             groupBox1.TabIndex = 2;
             groupBox1.TabStop = false;
-           
             // 
             // Form1
             // 
@@ -113,7 +112,6 @@
             MinimumSize = new Size(500, 600);
             Name = "Form1";
             Text = "Clarity";
-            
             groupBox1.ResumeLayout(false);
             ResumeLayout(false);
         }
