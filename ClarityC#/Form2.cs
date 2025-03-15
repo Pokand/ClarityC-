@@ -19,8 +19,13 @@ namespace ClarityC_
 
         public Form2(Form1 f)
         {
-            
+
             f.BackColor = Color.Yellow;
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
