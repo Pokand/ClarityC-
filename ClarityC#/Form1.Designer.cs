@@ -175,7 +175,6 @@
         }
 
         #endregion
-
         private Button ReceiptButn;
         private Button SettingButn;
         private Button MusikButn;
