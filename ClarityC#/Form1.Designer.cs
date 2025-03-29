@@ -110,7 +110,7 @@
             // button1
             // 
             button1.BackColor = Color.Black;
-            button1.Location = new Point(174, 289);
+            button1.Location = new Point(218, 143);
             button1.Name = "button1";
             button1.Size = new Size(130, 39);
             button1.TabIndex = 5;
@@ -124,7 +124,7 @@
             numericUpDown1.BackColor = SystemColors.HotTrack;
             numericUpDown1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 204);
             numericUpDown1.ForeColor = SystemColors.Menu;
-            numericUpDown1.Location = new Point(174, 61);
+            numericUpDown1.Location = new Point(218, 61);
             numericUpDown1.Maximum = new decimal(new int[] { 23, 0, 0, 0 });
             numericUpDown1.Name = "numericUpDown1";
             numericUpDown1.Size = new Size(55, 23);
@@ -135,7 +135,7 @@
             // 
             numericUpDown2.BackColor = SystemColors.HotTrack;
             numericUpDown2.ForeColor = SystemColors.Menu;
-            numericUpDown2.Location = new Point(251, 61);
+            numericUpDown2.Location = new Point(295, 61);
             numericUpDown2.Maximum = new decimal(new int[] { 55, 0, 0, 0 });
             numericUpDown2.Name = "numericUpDown2";
             numericUpDown2.Size = new Size(53, 23);
@@ -144,7 +144,7 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(174, 242);
+            textBox1.Location = new Point(218, 105);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(130, 23);
             textBox1.TabIndex = 8;

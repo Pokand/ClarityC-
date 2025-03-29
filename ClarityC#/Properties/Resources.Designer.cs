@@ -69,5 +69,14 @@ namespace ClarityC_.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string logo {
+            get {
+                return ResourceManager.GetString("logo", resourceCulture);
+            }
+        }
     }
 }

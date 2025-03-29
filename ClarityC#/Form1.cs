@@ -5,20 +5,20 @@ namespace ClarityC_
 {
     public partial class Form1 : Form
     {
-
+       
         bool ONreceipt = false;
-
-
+        
+        
 
         public Form1()
         {
-
+            
             InitializeComponent();
             ClockButn.Click += Clockbtn_Click;
             SettingButn.Click += button2_Click;
             MusikButn.Click += btn3_Click;
             button1.Click += button1_Click_1;
-
+            
         }
         private void button2_Click(object? sender, EventArgs e)
         {
@@ -26,7 +26,7 @@ namespace ClarityC_
         }
         private void btn3_Click(object? sender, EventArgs e)
         {
-
+            
         }
         private void Clockbtn_Click(object? sender, EventArgs e)
         {
@@ -39,7 +39,7 @@ namespace ClarityC_
                 numericUpDown1.Text = (DateTime.Now.Hour).ToString();
                 numericUpDown2.Text = (DateTime.Now.Minute).ToString();
                 textBox1.Visible = true;
-
+               
             }
         }
 
@@ -60,15 +60,14 @@ namespace ClarityC_
             while (taim > 0)
             {
                 taim--;
-                textBox1.Text = taim.ToString();
+                textBox1.Text = taim.ToString();   
                 await Task.Delay(1000);
             }
             SoundPlayer sp = new SoundPlayer("C:\\Windows\\Media\\Alarm06.wav");
             sp.Play();
-
-
+            
+            
         }
 
-       
     }
 }
