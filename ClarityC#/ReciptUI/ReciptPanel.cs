@@ -14,6 +14,14 @@ namespace ClarityC_.ReciptUI
     public partial class ReciptPanel : UserControl
     {
         public static int _yyears, _monts;
+        public int returnYears()
+        {
+            return _yyears;
+        }
+        public int retunMonts()
+        {
+            return _monts;
+        }
         public ReciptPanel()
         {
             InitializeComponent();
@@ -30,7 +38,7 @@ namespace ClarityC_.ReciptUI
             flowLayoutPanel1.Controls.Clear();
             _yyears = years;
             _monts = monts;
-
+           
             string monthName = new DateTimeFormatInfo().GetMonthName(monts);
             label8.Text = monthName.ToUpper() + " " + years;
             DateTime starofMonths = new DateTime(years, monts, 1);
@@ -43,9 +51,20 @@ namespace ClarityC_.ReciptUI
             }
             for (int i = 1; i < day; i++)
             {
-                ReciptUI rui = new ReciptUI(i + "");
-                flowLayoutPanel1.Controls.Add(rui);
+                ReciptUI rui;
+                if(DateTime.Now.Day == i && DateTime.Now.Month == _monts && DateTime.Now.Year == years)
+                {
+                    // В Color можешь изменить цвет сегодняшнего дня
+                    rui = new ReciptUI(i + "", Color.FromArgb(20, Color.White));
+                    flowLayoutPanel1.Controls.Add(rui);
+                }
+                else
+                {
+                   rui = new ReciptUI(i + "");
+                    flowLayoutPanel1.Controls.Add(rui);
+                }
             }
+            
 
 
         }

@@ -36,6 +36,7 @@
             groupBox1 = new GroupBox();
             clockbClass1 = new ClockBClass();
             reciptPanel1 = new ReciptUI.ReciptPanel();
+            musikClass1 = new MusikUI.MusikClass();
             groupBox1.SuspendLayout();
             SuspendLayout();
             // 
@@ -75,6 +76,7 @@
             MusikButn.TabStop = false;
             MusikButn.Text = "Музыка";
             MusikButn.UseVisualStyleBackColor = false;
+            MusikButn.Click += MusikButn_Click;
             // 
             // ClockButn
             // 
@@ -123,12 +125,21 @@
             reciptPanel1.TabIndex = 2;
             reciptPanel1.TabStop = false;
             // 
+            // musikClass1
+            // 
+            musikClass1.Location = new Point(158, 1);
+            musikClass1.Name = "musikClass1";
+            musikClass1.Size = new Size(625, 563);
+            musikClass1.TabIndex = 12;
+            musikClass1.Visible = false;
+            // 
             // Form1
             // 
             AutoScaleMode = AutoScaleMode.None;
             BackColor = SystemColors.ActiveCaption;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(784, 561);
+            Controls.Add(musikClass1);
             Controls.Add(reciptPanel1);
             Controls.Add(clockbClass1);
             Controls.Add(groupBox1);
@@ -150,5 +161,6 @@
         private GroupBox groupBox1;
         private ClockBClass clockbClass1;
         private ReciptUI.ReciptPanel reciptPanel1;
+        private MusikUI.MusikClass musikClass1;
     }
 }

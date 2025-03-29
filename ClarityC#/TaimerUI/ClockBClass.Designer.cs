@@ -28,85 +28,166 @@
         /// </summary>
         private void InitializeComponent()
         {
-            flowLayoutPanel1 = new FlowLayoutPanel();
-            taimerui1 = new TaimerUI.TaimerUI();
-            taimerui2 = new TaimerUI.TaimerUI();
-            taimerui3 = new TaimerUI.TaimerUI();
-            taimerui4 = new TaimerUI.TaimerUI();
-            newTaimer1 = new TaimerUI.NewTaimer();
-            flowLayoutPanel1.SuspendLayout();
+            retText5 = new TaimerUI.RetText();
+            retText4 = new TaimerUI.RetText();
+            retText3 = new TaimerUI.RetText();
+            retText2 = new TaimerUI.RetText();
+            retText1 = new TaimerUI.RetText();
+            buttonRet1 = new TaimerUI.ButtonRet();
+            buttonRet2 = new TaimerUI.ButtonRet();
+            buttonRet3 = new TaimerUI.ButtonRet();
+            buttonReverse1 = new TaimerUI.ButtonReverse();
+            buttonReverse2 = new TaimerUI.ButtonReverse();
+            buttonReverse3 = new TaimerUI.ButtonReverse();
+            classButton1 = new ClassButton();
             SuspendLayout();
             // 
-            // flowLayoutPanel1
+            // retText5
             // 
-            flowLayoutPanel1.BorderStyle = BorderStyle.FixedSingle;
-            flowLayoutPanel1.Controls.Add(taimerui1);
-            flowLayoutPanel1.Controls.Add(taimerui2);
-            flowLayoutPanel1.Controls.Add(taimerui3);
-            flowLayoutPanel1.Controls.Add(taimerui4);
-            flowLayoutPanel1.Location = new Point(3, 3);
-            flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(535, 557);
-            flowLayoutPanel1.TabIndex = 0;
+            retText5.Font = new Font("Gadugi", 20.25F, FontStyle.Bold);
+            retText5.Location = new Point(350, 96);
+            retText5.Name = "retText5";
+            retText5.Size = new Size(10, 81);
+            retText5.TabIndex = 14;
+            retText5.Text = ":";
             // 
-            // taimerui1
+            // retText4
             // 
-            taimerui1.Location = new Point(3, 3);
-            taimerui1.Name = "taimerui1";
-            taimerui1.Size = new Size(170, 177);
-            taimerui1.TabIndex = 0;
+            retText4.Font = new Font("Gadugi", 20.25F, FontStyle.Bold);
+            retText4.Location = new Point(250, 96);
+            retText4.Name = "retText4";
+            retText4.Size = new Size(10, 81);
+            retText4.TabIndex = 13;
+            retText4.Text = ":";
             // 
-            // taimerui2
+            // retText3
             // 
-            taimerui2.Location = new Point(179, 3);
-            taimerui2.Name = "taimerui2";
-            taimerui2.Size = new Size(170, 177);
-            taimerui2.TabIndex = 1;
-            taimerui2.Load += taimerui2_Load;
+            retText3.Font = new Font("Gadugi", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            retText3.Location = new Point(331, 96);
+            retText3.Name = "retText3";
+            retText3.Size = new Size(144, 81);
+            retText3.TabIndex = 12;
+            retText3.Text = "00";
             // 
-            // taimerui3
+            // retText2
             // 
-            taimerui3.Location = new Point(355, 3);
-            taimerui3.Name = "taimerui3";
-            taimerui3.Size = new Size(170, 177);
-            taimerui3.TabIndex = 2;
+            retText2.Font = new Font("Gadugi", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            retText2.Location = new Point(234, 96);
+            retText2.Name = "retText2";
+            retText2.Size = new Size(158, 81);
+            retText2.TabIndex = 11;
+            retText2.Text = "00";
             // 
-            // taimerui4
+            // retText1
             // 
-            taimerui4.Location = new Point(3, 186);
-            taimerui4.Name = "taimerui4";
-            taimerui4.Size = new Size(170, 177);
-            taimerui4.TabIndex = 3;
+            retText1.Font = new Font("Gadugi", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            retText1.Location = new Point(144, 96);
+            retText1.Name = "retText1";
+            retText1.Size = new Size(150, 81);
+            retText1.TabIndex = 10;
+            retText1.Text = "00";
             // 
-            // newTaimer1
+            // buttonRet1
             // 
-            newTaimer1.Location = new Point(588, 527);
-            newTaimer1.Name = "newTaimer1";
-            newTaimer1.Size = new Size(30, 30);
-            newTaimer1.TabIndex = 1;
-            newTaimer1.TabStop = false;
-            newTaimer1.Text = "newTaimer1";
-            newTaimer1.Click += newTaimer1_Click;
+            buttonRet1.Location = new Point(193, 64);
+            buttonRet1.Name = "buttonRet1";
+            buttonRet1.Size = new Size(51, 26);
+            buttonRet1.TabIndex = 15;
+            buttonRet1.Text = "buttonRet1";
+            buttonRet1.MouseDown += buttonRet1_MouseDown;
+            // 
+            // buttonRet2
+            // 
+            buttonRet2.Location = new Point(287, 64);
+            buttonRet2.Name = "buttonRet2";
+            buttonRet2.Size = new Size(51, 26);
+            buttonRet2.TabIndex = 16;
+            buttonRet2.Text = "buttonRet2";
+            buttonRet2.MouseDown += buttonRet2_MouseDown;
+            // 
+            // buttonRet3
+            // 
+            buttonRet3.BackColor = SystemColors.ActiveCaption;
+            buttonRet3.Location = new Point(375, 64);
+            buttonRet3.Name = "buttonRet3";
+            buttonRet3.Size = new Size(51, 26);
+            buttonRet3.TabIndex = 17;
+            buttonRet3.Text = "buttonRet3";
+            buttonRet3.MouseDown += buttonRet3_MouseDown;
+            // 
+            // buttonReverse1
+            // 
+            buttonReverse1.Location = new Point(193, 183);
+            buttonReverse1.Name = "buttonReverse1";
+            buttonReverse1.Size = new Size(51, 26);
+            buttonReverse1.TabIndex = 18;
+            buttonReverse1.Text = "buttonReverse1";
+            buttonReverse1.MouseDown += buttonReverse1_MouseDown;
+            // 
+            // buttonReverse2
+            // 
+            buttonReverse2.Location = new Point(287, 183);
+            buttonReverse2.Name = "buttonReverse2";
+            buttonReverse2.Size = new Size(51, 26);
+            buttonReverse2.TabIndex = 19;
+            buttonReverse2.Text = "buttonReverse2";
+            buttonReverse2.MouseDown += buttonReverse2_MouseDown;
+            // 
+            // buttonReverse3
+            // 
+            buttonReverse3.ForeColor = SystemColors.ControlText;
+            buttonReverse3.Location = new Point(375, 183);
+            buttonReverse3.Name = "buttonReverse3";
+            buttonReverse3.Size = new Size(51, 26);
+            buttonReverse3.TabIndex = 20;
+            buttonReverse3.Text = "buttonReverse3";
+            buttonReverse3.MouseDown += buttonReverse3_MouseDown;
+            // 
+            // classButton1
+            // 
+            classButton1.BackColor = Color.IndianRed;
+            classButton1.Location = new Point(234, 253);
+            classButton1.Name = "classButton1";
+            classButton1.Size = new Size(160, 75);
+            classButton1.TabIndex = 21;
+            classButton1.Text = "Сохранить";
+            classButton1.MouseDown += classButton1_MouseDown;
             // 
             // ClockBClass
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            Controls.Add(newTaimer1);
-            Controls.Add(flowLayoutPanel1);
+            BackColor = SystemColors.ActiveCaption;
+            Controls.Add(classButton1);
+            Controls.Add(buttonReverse3);
+            Controls.Add(buttonReverse2);
+            Controls.Add(buttonReverse1);
+            Controls.Add(buttonRet3);
+            Controls.Add(buttonRet2);
+            Controls.Add(buttonRet1);
+            Controls.Add(retText5);
+            Controls.Add(retText4);
+            Controls.Add(retText3);
+            Controls.Add(retText2);
+            Controls.Add(retText1);
             Name = "ClockBClass";
             Size = new Size(625, 563);
-            flowLayoutPanel1.ResumeLayout(false);
             ResumeLayout(false);
         }
 
         #endregion
 
-        private FlowLayoutPanel flowLayoutPanel1;
-        private TaimerUI.TaimerUI taimerui1;
-        private TaimerUI.TaimerUI taimerui2;
-        private TaimerUI.TaimerUI taimerui3;
-        private TaimerUI.TaimerUI taimerui4;
-        private TaimerUI.NewTaimer newTaimer1;
+        private TaimerUI.RetText retText5;
+        private TaimerUI.RetText retText4;
+        private TaimerUI.RetText retText3;
+        private TaimerUI.RetText retText2;
+        private TaimerUI.RetText retText1;
+        private TaimerUI.ButtonRet buttonRet1;
+        private TaimerUI.ButtonRet buttonRet2;
+        private TaimerUI.ButtonRet buttonRet3;
+        private TaimerUI.ButtonReverse buttonReverse1;
+        private TaimerUI.ButtonReverse buttonReverse2;
+        private TaimerUI.ButtonReverse buttonReverse3;
+        private ClassButton classButton1;
     }
 }

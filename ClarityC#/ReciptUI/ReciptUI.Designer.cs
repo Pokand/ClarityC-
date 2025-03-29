@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
+            textBox1 = new TextBox();
             label1 = new Label();
             checkBox1 = new CheckBox();
             panel1.SuspendLayout();
@@ -36,21 +37,35 @@
             // 
             // panel1
             // 
+            panel1.Controls.Add(textBox1);
             panel1.Controls.Add(label1);
             panel1.Controls.Add(checkBox1);
             panel1.Dock = DockStyle.Fill;
             panel1.Location = new Point(0, 0);
             panel1.Margin = new Padding(1);
             panel1.Name = "panel1";
-            panel1.Size = new Size(83, 96);
+            panel1.Size = new Size(83, 82);
             panel1.TabIndex = 0;
             panel1.Click += panel1_Click;
+            // 
+            // textBox1
+            // 
+            textBox1.BackColor = SystemColors.ActiveCaption;
+            textBox1.BorderStyle = BorderStyle.None;
+            textBox1.Font = new Font("Javanese Text", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            textBox1.Location = new Point(0, 26);
+            textBox1.MaxLength = 20;
+            textBox1.Multiline = true;
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(83, 56);
+            textBox1.TabIndex = 2;
             // 
             // label1
             // 
             label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
             label1.Font = new Font("Tahoma", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            label1.Location = new Point(46, 12);
+            label1.Location = new Point(49, 0);
             label1.Name = "label1";
             label1.Size = new Size(34, 23);
             label1.TabIndex = 1;
@@ -59,7 +74,7 @@
             // checkBox1
             // 
             checkBox1.AutoSize = true;
-            checkBox1.Location = new Point(12, 20);
+            checkBox1.Location = new Point(12, 8);
             checkBox1.Name = "checkBox1";
             checkBox1.Size = new Size(15, 14);
             checkBox1.TabIndex = 0;
@@ -72,7 +87,7 @@
             Controls.Add(panel1);
             Margin = new Padding(1);
             Name = "ReciptUI";
-            Size = new Size(83, 96);
+            Size = new Size(83, 82);
             Load += ReciptUI_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
@@ -84,5 +99,6 @@
         private Panel panel1;
         private CheckBox checkBox1;
         private Label label1;
+        private TextBox textBox1;
     }
 }

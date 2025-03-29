@@ -49,7 +49,7 @@ namespace ClarityC_.TaimerUI
                 DoubleBuffered = true;
                 Size = new Size(46, 46);
                 TabStop = false;
-
+                
             }
 
             protected override void OnPaint(PaintEventArgs e)
@@ -136,7 +136,7 @@ namespace ClarityC_.TaimerUI
         {
             base.OnPaint(e);
             Graphics graphics = e.Graphics;
-            graphics.Clear(Parent.BackColor);
+            graphics.Clear(SystemColors.ActiveCaption);
             graphics.InterpolationMode = InterpolationMode.HighQualityBicubic;
             
             Point point = new Point(0, Height -1);
@@ -177,7 +177,7 @@ namespace ClarityC_.TaimerUI
         {
             base.OnPaint(e);
             Graphics graphics = e.Graphics;
-            graphics.Clear(Parent.BackColor);
+            graphics.Clear(SystemColors.ActiveCaption);
             graphics.InterpolationMode = InterpolationMode.HighQualityBicubic;
 
             Point point = new Point(0, 0);
@@ -220,7 +220,7 @@ namespace ClarityC_.TaimerUI
             base.OnPaint(e);
             Graphics graphics = e.Graphics;
             graphics.InterpolationMode = InterpolationMode.HighQualityBicubic;
-            graphics.Clear(Parent.BackColor);
+            graphics.Clear(SystemColors.ActiveCaption);
             Rectangle rec = new Rectangle(0, 0, Width - 1, Height - 1);
             graphics.DrawString(Text, Font, new SolidBrush(Color.Black), rec,sf);
         }
